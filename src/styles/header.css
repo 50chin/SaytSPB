@@ -115,6 +115,10 @@
   margin-bottom: 10px;
 }
 
+.header__mobile-block {
+  display: none;
+}
+
 @media screen and (max-width: 1199px) {
   .header__wrapper {
     gap: 44px;
