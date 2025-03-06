@@ -1,0 +1,31 @@
+.services {
+  padding: 150px 0 75px;
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 44px;
+}
+
+@media screen and (max-width: 1631) {
+  .services__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services {
+    padding: 50px 0 25px;
+  }
+
+  .services__wrapper {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .services__title {
+  }
+}

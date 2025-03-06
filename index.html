@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script src="./src/script/app.js" defer type="module"></script>
+    <title>Top test</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <!-- prettier-ignore -->
+          <a href="#"><img src="./src/images/icons/logo.svg" alt="logo" class="header__logo" /></a>
+          <div class="header__navbar">
+            <!-- BURGER -->
+            <div class="burger__menu">
+              <input
+                type="checkbox"
+                id="burger-checkbox"
+                class="burger-checkbox"
+              />
+              <label for="burger-checkbox" class="burger"></label>
+              <ul class="burger__menu-list" id="burgerMenuList">
+                <li class="header__menu-item list-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">Разработка</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">визитка</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Landing-page</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">сайт услуг</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">интернет-магазин</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">сайт каталог</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">корпоративный сайт</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">портал</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item list-item">
+                  <a href="#">Продвижение</a>
+                </li>
+                <li class="header__menu-item list-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">Другие услуги</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">Контекстная реклама</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Техническая поддержка</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Доработка сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">интернет-магазин</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Дизайн сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Верстка сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">аудит</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item list-item">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="header__menu-item list-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">О компании</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">реквизиты</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">процесс работы</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">вакансии</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Брифы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item list-item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <div class="header__mobile-block">
+                    <div class="header__social-block">
+                      <a href="https://web.telegram.org/k/"
+                        ><img src="./src/images/icons/tg.svg" alt="telegram"
+                      /></a>
+                      <a href="https://www.whatsapp.com/?lang=ru_RU"
+                        ><img src="./src/images/icons/wa.svg" alt="whatsapp"
+                      /></a>
+                    </div>
+                    <div class="header__contacts-block">
+                      <p class="header__contact">
+                        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                      </p>
+                      <p class="header__contact">
+                        <a href="mailto:kaktys@mail.ru">kaktys@mail.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">Разработка</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">визитка</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Landing-page</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">сайт услуг</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">интернет-магазин</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">сайт каталог</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">корпоративный сайт</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">портал</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item"><a href="#">Продвижение</a></li>
+                <li class="header__menu-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">Другие услуги</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">Контекстная реклама</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Техническая поддержка</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Доработка сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">интернет-магазин</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Дизайн сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Верстка сайтов</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">аудит</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item"><a href="#">Блог</a></li>
+                <li class="header__menu-item">
+                  <div class="header__menu-container">
+                    <div class="header__btn-block">
+                      <button class="header__menu-btn">О компании</button>
+                      <img
+                        class="header__menu-icon"
+                        src="./src/images/icons/polygon.svg"
+                        alt="иконка раскрытия"
+                      />
+                    </div>
+                    <ul class="header__dev-list">
+                      <li class="list-item">
+                        <a href="">реквизиты</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">процесс работы</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">вакансии</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="">Брифы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__menu-item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__right-block">
+              <div class="header__social-block">
+                <a href="https://web.telegram.org/k/"
+                  ><img src="./src/images/icons/tg.svg" alt="telegram"
+                /></a>
+                <a href="https://www.whatsapp.com/?lang=ru_RU"
+                  ><img src="./src/images/icons/wa.svg" alt="whatsapp"
+                /></a>
+              </div>
+              <div class="header__contacts-block">
+                <p class="header__contact">
+                  <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                </p>
+                <p class="header__contact">
+                  <a href="mailto:kaktys@mail.ru">kaktys@mail.ru</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title title"><span>Что</span> мы предлагаем</h2>
+          <div class="services__wrapper"></div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title title">
+            <span>НАШИ</span> ПРЕИМУЩЕСТВА
+          </h2>
+          <p class="advantages__subtitle text">
+            За более чем 10-летний опыт успешной работы в интернете наша команда
+            специалистов накопила огромнейший пласт опыта, сформировав при этом
+            уникальные эффективные принципы работы с клиентами и партнерами.
+          </p>
+          <div class="advantages__wrapper">
+            <div class="advantages-card">
+              <div class="advantages-card__box">
+                <div class="advantages__text-block">
+                  <h3 class="advantages-card__title">12+</h3>
+                  <h3 class="advantages-card__title">+180</h3>
+                  <h3 class="advantages-card__title">10+</h3>
+                </div>
+                <div class="advantage-card__img-block">
+                  <img
+                    class="advantages-card__img"
+                    src="./src/images/icons/circle.svg"
+                    alt=""
+                  />
+                  <div class="advantages-card__circle-block">
+                    <p class="advantages__text text">Лет опыта в IT отрасли</p>
+                    <p class="advantages__text text">Выполненных проектов</p>
+                    <p class="advantages__text text">Гарантия срока</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="advantages-card">
+              <div class="advantages-card__box">
+                <div class="advantages__text-block">
+                  <h3 class="advantages-card__title">10+</h3>
+                  <h3 class="advantages-card__title">150k+</h3>
+                  <h3 class="advantages-card__title">50+</h3>
+                </div>
+                <div class="advantage-card__img-block">
+                  <img
+                    class="advantages-card__img"
+                    src="./src/images/icons/circle.svg"
+                    alt=""
+                  />
+                  <div class="advantages-card__circle-block">
+                    <p class="advantages__text text">Гарантия результата</p>
+                    <p class="advantages__text text">Продвигаемых запросов</p>
+                    <p class="advantages__text text">Сайтов на продвижении</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title title">
+            <span>Что о нас</span> <span>говорят наши</span> клиенты
+          </h2>
+          <div class="feedback__content">
+            <div class="feedback__wrapper">
+              <div class="feedback__img-block">
+                <img
+                  src="./src/images/icons/image.svg"
+                  alt="логотип"
+                  class="feedback__img"
+                />
+              </div>
+              <div class="feedback__text-block">
+                <p class="feedback__text text">
+                  Ни капли не разочарован в услугах. Все сделали от начала и до
+                  конца. Особое внимание хочу уделить телефонным переговорам,
+                  т.к. я человек занятой и времени на встречи нет. Очень часто
+                  излагал свои требования неясно и в впопыхах, тем не менее,
+                  меня понимали с полуслова. В общем, если вам дорого ваше время
+                  и деньги, то это место для вас!
+                </p>
+              </div>
+            </div>
+            <div class="feedback__btn-block">
+              <button class="feedback__btn-left">
+                <img src="./src/images/icons/btn-left.svg" alt="arrow left" />
+              </button>
+              <button class="feedback__btn-right">
+                <img src="./src/images/icons/btn-right.svg" alt="arrow right" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

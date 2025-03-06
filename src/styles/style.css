@@ -1,0 +1,10 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./global.css");
+@import url("./header.css");
+@import url("./block/burger.css");
+@import url("./sections/services.css");
+@import url("./block/services-card.css");
+@import url("./sections/advantages.css");
+@import url("./block/advantages-card.css");
+@import url("./sections/feedback.css");
