@@ -21,10 +21,19 @@
   display: none;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
 .feedback__wrapper.active {
   display: flex;
+}
+
+.feedback__img {
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  object-position: center;
 }
 
 .feedback__text {
@@ -44,6 +53,7 @@
   }
 
   .feedback__wrapper {
+    gap: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -68,6 +78,7 @@
   }
 
   .feedback__img {
+    min-width: 67px;
     width: 67px;
     height: 69px;
     border-radius: 69px;
