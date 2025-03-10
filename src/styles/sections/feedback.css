@@ -5,9 +5,12 @@
 .feedback__content {
   max-width: 1330px;
   margin: 50px auto 0;
+  position: relative;
 }
 
 .feedback__text-block {
+  height: 300px;
+  width: 100%;
   max-width: 1060px;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(21px);
@@ -15,9 +18,13 @@
 }
 
 .feedback__wrapper {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
+}
+
+.feedback__wrapper.active {
+  display: flex;
 }
 
 .feedback__text {
@@ -68,7 +75,8 @@
   }
 
   .feedback__text-block {
-    padding: 20px 0;
+    height: 180px;
+    padding: 20px 10px;
   }
 
   .feedback__text {

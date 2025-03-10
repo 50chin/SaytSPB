@@ -1,5 +1,5 @@
 .services {
-  padding: 150px 0 75px;
+  padding: 210px 0 75px;
 }
 
 .services__wrapper {
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 550px) {
   .services {
-    padding: 50px 0 25px;
+    padding: 110px 0 25px;
   }
 
   .services__wrapper {

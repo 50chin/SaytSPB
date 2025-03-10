@@ -1,5 +1,11 @@
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
   padding: 27px 0 20px;
+  background-color: #0d0e11;
 }
 
 .header__wrapper {
@@ -37,6 +43,7 @@
 
 .header__menu-item {
   text-transform: uppercase;
+  transition: 0.3s ease-in-out;
 }
 
 .header__menu-container {
@@ -47,7 +54,7 @@
   align-items: center;
 }
 
-.header__btn-block {
+.header__menu-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,28 +72,12 @@
   display: none;
   z-index: 100;
   padding-top: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.header__menu-btn.active {
-  text-decoration: underline;
-}
-
-.header__dev-list.active {
-  display: block;
-  opacity: 1;
-  visibility: visible;
+  transition: 0.5s ease-in-out;
 }
 
 .header__menu-icon {
   margin-top: 10px;
-  transition: transform 0.3s ease;
-}
-
-.header__menu-icon.active {
-  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
 }
 
 .header__right-block {
@@ -103,6 +94,7 @@
 }
 
 .header__contact {
+  white-space: nowrap;
   text-align: end;
   transition: 0.3s;
 }
@@ -117,6 +109,17 @@
 
 .header__mobile-block {
   display: none;
+}
+@media (min-width: 1200px) {
+  .header__menu-container:hover .header__dev-list {
+    display: block;
+  }
+  .header__menu-container:hover .header__menu-btn {
+    text-decoration: underline;
+  }
+  .header__menu-container:hover .header__menu-icon {
+    transform: rotate(180deg);
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -133,7 +136,7 @@
     width: 240px;
   }
 
-  .header__btn-block {
+  .header__menu-block {
     flex-direction: row;
     gap: 5px;
   }
@@ -148,8 +151,12 @@
     margin-top: 0;
   }
 
-  .header__btn-block:hover {
-    background: linear-gradient(90deg, #ea32d9 0%, #004bed 100%);
+  .header__dev-list.active {
+    display: block;
+  }
+
+  .header__menu-icon.active {
+    transform: rotate(180deg);
   }
 }
 
@@ -172,9 +179,7 @@
   }
 
   .header__mobile-block {
-    position: absolute;
     width: 100%;
-    bottom: 0;
     padding: 20px 15px;
     display: flex;
     align-items: center;

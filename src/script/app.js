@@ -33,9 +33,7 @@ menuContainers.forEach((el) => {
   const listNode = el.querySelector(".header__dev-list");
   const iconNode = el.querySelector(".header__menu-icon");
 
-  el.addEventListener("click", (evt) => {
-    if (listNode.contains(evt.target)) return;
-
+  el.addEventListener("click", () => {
     menuContainers.forEach((otherContainer) => {
       if (otherContainer !== el) {
         otherContainer
@@ -85,3 +83,24 @@ document.querySelectorAll(".burger__menu-list a").forEach((link) => {
     bodyNode.classList.remove("no-scroll");
   });
 });
+
+const slides = document.querySelectorAll(".feedback__wrapper");
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+}
+
+document.querySelector(".feedback__btn-left").addEventListener("click", () => {
+  currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+  showSlide(currentIndex);
+});
+
+document.querySelector(".feedback__btn-right").addEventListener("click", () => {
+  currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+  showSlide(currentIndex);
+});
+
+showSlide(currentIndex);

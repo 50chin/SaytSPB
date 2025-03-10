@@ -34,16 +34,22 @@
   background: #0d0e11;
 }
 
-.list-item a:hover {
-  background: linear-gradient(90deg, #ea32d9 0%, #004bed 100%);
+@media screen and (min-width: 1200px) {
+  .list-item a:hover {
+    background: linear-gradient(90deg, #ea32d9 0%, #004bed 100%);
+  }
 }
 
 @media screen and (max-width: 1199px) {
-  .list-item .header__btn-block {
+  .list-item .header__menu-block {
     width: 100%;
     padding: 13px 15px 12px 40px;
 
     background: #0d0e11;
+  }
+
+  a:active {
+    background-color: #0d0e11;
   }
 }
 

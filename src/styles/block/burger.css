@@ -57,14 +57,15 @@
 
 .burger__menu-list {
   position: fixed;
-  top: 0;
+  top: 30px;
   right: -320px;
   width: 320px;
   height: 100vh;
-  padding-top: 27px;
+
   background: rgb(0, 0, 0);
   transition: transform 0.3s ease;
   z-index: 100;
+  overflow-y: auto;
 }
 
 .burger__menu-list.active {
@@ -80,6 +81,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
+  overflow: hidden;
 }
 
 .overlay.active {
@@ -98,6 +100,8 @@ body.no-scroll {
 
 @media screen and (max-width: 550px) {
   .burger__menu-list {
-    padding-top: 59px;
+    padding-top: 0;
+    top: 59px;
+    height: calc(100vh - 59px);
   }
 }
